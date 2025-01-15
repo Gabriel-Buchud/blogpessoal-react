@@ -60,5 +60,5 @@ O deploy contínuo do frontend foi realizado na **Vercel**, proporcionando atual
 
 ## Backend
 Para o backend da aplicação, consulte o repositório correspondente:
-[Blog Pessoal - Backend](https://github.com/lidskey/blogpessoal_nest)
+[Blog Pessoal - Backend](https://github.com/Gabriel-Buchud/blogpessoal-nest)
 
