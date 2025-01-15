@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# Blog Pessoal - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o frontend do projeto **Blog Pessoal**, desenvolvido durante o Bloco 2 do Bootcamp da **Generation Brasil**. A aplicação foi construída com **React**, utilizando **Axios** para requisições HTTP, **Vite** como ferramenta de build, e **Tailwind CSS** para estilização. O deploy contínuo foi realizado com a **Vercel**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descrição
+O Blog Pessoal é uma aplicação de blog com interface simples e responsiva, onde os usuários podem:
+- Visualizar, criar, editar e excluir postagens.
+- Gerenciar a autenticação e autorização de usuários usando **JWT**.
 
-## Expanding the ESLint configuration
+A aplicação se comunica com uma API backend para fornecer uma experiência completa de gerenciamento de conteúdo.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologias Utilizadas
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.  
+- **Axios**: Cliente HTTP baseado em Promises para comunicação com APIs.  
+- **Vite**: Ferramenta de build rápida e leve para desenvolvimento moderno com React.  
+- **Tailwind CSS**: Framework de utilitários para estilização rápida e responsiva.  
+- **Vercel**: Plataforma de deploy contínuo e fácil integração com repositórios Git.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Instalação e Execução
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/blog-pessoal-frontend.git
+   cd blog-pessoal-frontend
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. Instale as dependências:
+   ```bash
+   yarn
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   yarn dev
+   ```
+
+4. Abra o navegador e acesse:
+   [http://localhost:4000](http://localhost:4000)
+
+---
+
+## Funcionalidades
+- Visualização de postagens do blog.
+- Criação, edição e exclusão de postagens.
+- Autenticação e autorização com **JWT**.
+- Interface amigável e responsiva para dispositivos móveis.
+
+---
+
+## Deploy
+O deploy contínuo do frontend foi realizado na **Vercel**, proporcionando atualizações automáticas e integração direta com o repositório Git.
+
+---
+
+## Backend
+Para o backend da aplicação, consulte o repositório correspondente:
+[Blog Pessoal - Backend](https://github.com/lidskey/blogpessoal_nest)
+
